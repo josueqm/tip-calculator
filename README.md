@@ -1,4 +1,4 @@
-# Tip Calculatop App
+# Tip Calculator App
 Tip Calculator Web Application, Data validation practice with JS
 
 ## The challenge
@@ -14,4 +14,4 @@ La calculadora nos dará la cantidad de propina por persona que deberíamos deja
 
 ## Screenshot
 
-
+![Screenshot App](https://github.com/josueqm/tip-calculator/blob/main/images/screenshot.desktop.png)

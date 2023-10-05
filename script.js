@@ -95,7 +95,7 @@ function calcularPropina() {
 		propinaPersona = 0.5;
 	}
 
-	alert('La propina por Comensal es: ' + propinaPersona.toFixed(2) + ' €');
+	alert(`La propina por Comensal es: ${propinaPersona.toFixed(2)} €`);
 }
 
 function showError(input, mensaje) {
