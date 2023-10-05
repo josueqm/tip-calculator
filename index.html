@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="./style.css">
+    <title>.:: Calculadora de Propinas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card my-3">
+            <div class="card-header">Calculadora de propinas</div>
+            <div class="card-body">
+                <form class="needs-validation was-validated" action="" id="frmPropina"> <!-- novalidate-->
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="inputPeople" class="form-label">Cuantos són?</label>
+                            <div class="row">
+                                <div class="input-group col">
+                                    <div class="col">
+                                        <i id="icon" class="fas fa-user"></i>
+                                        <input type="number" class="form-control inputForm" id="inputPeople" name="inputPeople" min="0" placeholder="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="inputFactura" class="form-label">Total de la Factura?</label>
+                            <div class="row">
+                                <div class="input-group col">
+                                    <div class="col">
+                                        <i id="icon" class="fas fa-dollar-sign"></i>
+                                        <input type="number" class="form-control inputForm" id="inputFactura" name="inputFactura" placeholder="0.00" required>
+
+                                        <div class="invalid-feedback">
+                                            <small></small> 
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <label for="selectForm" class="form-label">Opina sobre el servicio</label>
+                            <select class="form-select" id="selectForm" required>
+                                <option value="">Seleccionar</option>
+                                <option value="genial">Genial</option><!-- 10% -->
+                                <option value="aceptable">Aceptable</option><!-- 5%-->
+                                <option value="horrible">Horrible</option><!-- 0% -->
+                            </select>
+                            
+                            <div class="invalid-feedback">
+                                <small>Debe seleccionar una Calificación.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button Form -->
+                    <button type="submit" id="btncalcular" class="btn btn-primary mt-3">Calcula la propina</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
