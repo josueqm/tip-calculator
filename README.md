@@ -14,4 +14,4 @@ La calculadora nos dará la cantidad de propina por persona que deberíamos deja
 
 ## Screenshot
 
-
+(https://github.com/josueqm/tip-calculator/blob/main/images/screenshot.desktop.png)
